@@ -9,7 +9,8 @@ export const HireMe = () => {
       <div className='hireMe__info'>
         <p>
           If you want to build a website for your bussiness or even for your
-          personal use, such as a blogspot, don't wait to long... and hire me ✔
+          personal use, such as a blogspot, don&apos;t wait to long... and hire
+          me ✔
         </p>
         <Link href='/contact'>Hire me! 📝</Link>
       </div>

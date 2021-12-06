@@ -39,9 +39,9 @@ const about = () => {
             <p>
               🕵 Everyday, I enjoy and love challenges, overcoming them
               motivates me to continue learning and makes me a better
-              professional. 💖 I fall in love in programming every time, it's
-              like a deja vu🥰 and I try to incorporate it in some way in
-              everything that I do. 😎 Also, I have a lot of hobbies, such as
+              professional. 💖 I fall in love in programming every time,
+              it&apos;s like a deja vu🥰 and I try to incorporate it in some way
+              in everything that I do. 😎 Also, I have a lot of hobbies, such as
               traveling, listening to music, reading, ride bicycle, watching TV
               shows, drinking beer, and others.
             </p>
