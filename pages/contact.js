@@ -10,11 +10,11 @@ const contact = () => {
         <div className='contactForm__container'>
           <form
             action='/success'
-            name='Contact'
+            name='contact-form'
             method='POST'
             data-netlify='true'
           >
-            <input type='hidden' name='form-name' value='contact' />
+            <input type='hidden' name='form-name' value='contact-form' />
             <div className='formControl sender-data'>
               <input name='name' type='text' placeholder='Full name' required />
               <input name='email' type='text' placeholder='Email' required />
