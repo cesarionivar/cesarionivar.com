@@ -586,7 +586,8 @@ body {
   font-weight: lighter;
 }
 
-.projectCard__info > a {
+
+.projectCard__info a {
   padding: 10px;
   text-decoration: none;
   background-color: #0098BC;
@@ -599,10 +600,17 @@ body {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.projectCard__info .code-github {
+  background-color: black;
+}
+
 .projectCard__info > a:hover {
   background-color: #0085a3;
 }
 
+.projectCard__info > .code-github:hover {
+  background-color: #222;
+}
 
 /* SUCCESS */
 .success {

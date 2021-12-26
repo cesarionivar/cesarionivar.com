@@ -7,6 +7,7 @@ export default {
         'This clone was built with react, context API, firestore, auth firebase',
       imgUrl: '/img/projects/Whatsapp-clone.png',
       previewUrl: 'https://whatsapp-clone-bd13a.web.app/',
+      code: 'https://github.com/cesarionivar/Whatsapp-Clone',
     },
     {
       id: 'weather-app',
@@ -15,6 +16,7 @@ export default {
         'App built with react, context API, fetch and openweatherAPI for the weather data',
       imgUrl: '/img/projects/weather-app.png',
       previewUrl: 'https://mystifying-babbage-0e338f.netlify.app/',
+      code: 'https://github.com/cesarionivar/WeatherApp',
     },
     {
       id: 'slack-clone',
@@ -31,6 +33,7 @@ export default {
         "Devfinder it's an app that search for github users throught their API, built with react",
       imgUrl: '/img/projects/devfinder.png',
       previewUrl: 'https://epic-mahavira-4acdf7.netlify.app/',
+      code: 'https://github.com/cesarionivar/devfinder',
     },
     {
       id: 'google-clone',
@@ -38,6 +41,7 @@ export default {
       description: 'Google clone with react, and consuming Google Search API',
       imgUrl: '/img/projects/google-clone.png',
       previewUrl: 'https://clone-c8790.web.app/',
+      code: 'https://github.com/cesarionivar/next-google-clone',
     },
     {
       id: 'chat-group',
@@ -46,6 +50,7 @@ export default {
         '(Google auth, firestore, hosting) of firebase, redux, react, sweetalert2',
       imgUrl: '/img/projects/chat-group.png',
       previewUrl: 'https://chat-group-886f8.web.app/',
+      code: 'https://github.com/cesarionivar/Chat-Group',
     },
     {
       id: 'random-user',
@@ -54,6 +59,7 @@ export default {
         'Random user app generator using vanilla javascript and webpack for module bundle',
       imgUrl: '/img/projects/random-user.png',
       previewUrl: 'https://inspiring-franklin-bd3c18.netlify.app/',
+      code: 'https://github.com/cesarionivar/webpack-module-bundler',
     },
   ],
 };

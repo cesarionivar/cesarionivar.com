@@ -12,6 +12,14 @@ export const ProjectCard = ({ project }) => {
         <a href={project?.previewUrl} target='_blank' rel='noreferrer'>
           Preview
         </a>
+        <a
+          href={project?.code}
+          className='code-github'
+          target='_blank'
+          rel='noreferrer'
+        >
+          Code <i className='fab fa-github'></i>
+        </a>
       </div>
     </div>
   );
