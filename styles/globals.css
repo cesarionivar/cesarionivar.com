@@ -220,6 +220,9 @@ body {
   margin-bottom: 20px;
   padding: 0px 20px;
   text-align: center;
+  background: -webkit-linear-gradient(0.1turn, #0098bc, #ffb100, #0098bc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .banner {
