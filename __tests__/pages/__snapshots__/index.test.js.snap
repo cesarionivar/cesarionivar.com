@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home it renders HomePage unchanged 1`] = `
+exports[`Home it renders Homepage unchanged 1`] = `
 <div>
   <div
     class="landing page"
