@@ -4,7 +4,7 @@ export const Meta = ({ title, description, keywords }) => {
   return (
     <Head>
       <link rel='icon' href='/logo.png' />
-      <meta charset='utf-8' />
+      <meta charSet='utf-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta name='theme-color' content='#f2f2f2' />
       <meta
