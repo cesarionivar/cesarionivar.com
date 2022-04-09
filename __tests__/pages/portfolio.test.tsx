@@ -3,7 +3,7 @@ import Portfolio from '../../pages/portfolio';
 
 describe('Porfolio page', () => {
   beforeEach(() => {
-    render(<Portfolio />);
+    render(<Portfolio projects={[]} />);
   });
 
   test('should has portfolio title', () => {
