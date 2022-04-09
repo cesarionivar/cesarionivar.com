@@ -1,6 +1,12 @@
 import Head from 'next/head';
 
-export const Meta = ({ title, description, keywords }) => {
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+}
+
+export const Meta: React.VFC<Props> = ({ title, description, keywords }) => {
   return (
     <Head>
       <link rel='icon' href='/logo.png' />
