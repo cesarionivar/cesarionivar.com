@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Meta } from '../components/Meta';
+import { Meta } from '../../components/layout';
 
-const sucess = () => {
+const success = () => {
   return (
     <>
       <Meta title='Success Message | Cesario Nivar' />
@@ -19,4 +19,4 @@ const sucess = () => {
   );
 };
 
-export default sucess;
+export default success;

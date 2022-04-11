@@ -1,5 +1,5 @@
 import type { Params } from 'next/dist/server/router';
-import { PostType } from '../../types';
+import type { PostType } from '../../types';
 import markdownToHtml from '../../utils/markdownToHtml';
 import { getPostBySlug, getAllPosts } from '../../utils/postsApi';
 

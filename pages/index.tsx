@@ -1,7 +1,5 @@
-import { Banner } from '../components/Banner';
-import { HireMe } from '../components/HireMe';
-import { Meta } from '../components/Meta';
-import { Resume } from '../components/Resume';
+import { Meta } from '../components/layout';
+import { Banner, Resume, HireMe } from '../components/ui';
 import { getAllPosts } from '../utils/postsApi';
 import type { PostType } from '../types';
 

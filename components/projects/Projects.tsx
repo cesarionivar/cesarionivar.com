@@ -1,4 +1,4 @@
-import { IProjects } from '../types';
+import type { IProjects } from '../../types';
 import { ProjectCard } from './ProjectCard';
 
 interface Props {

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Portfolio from '../../pages/portfolio';
 
-describe('Porfolio page', () => {
+describe('Portfolio page', () => {
   beforeEach(() => {
     render(<Portfolio projects={[]} />);
   });

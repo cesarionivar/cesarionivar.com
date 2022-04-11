@@ -1,8 +1,8 @@
-import { Meta } from '../components/Meta';
-import { Projects } from '../components/Projects';
-import { IProjects } from '../types';
+import { Meta } from '../../components/layout';
+import { Projects } from '../../components/projects';
+import { IProjects } from '../../types';
 
-import data from '../utils/data';
+import data from '../../utils/data';
 
 interface Props {
   projects: IProjects[];

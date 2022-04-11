@@ -5,21 +5,21 @@ export const Footer: React.VFC = () => {
         <a
           href='https://github.com/cesarionivar'
           target='__blank'
-          rel='noreferer'
+          rel='noreferrer'
         >
           <i className='fab fa-github'></i>
         </a>
         <a
           href='https://www.twitter.com/cesarionivar'
           target='__blank'
-          rel='noreferer'
+          rel='noreferrer'
         >
           <i className='fab fa-twitter'></i>
         </a>
         <a
           href='https://www.linkedin.com/in/cesarionivar/'
           target='__blank'
-          rel='noreferer'
+          rel='noreferrer'
         >
           <i className='fab fa-linkedin'></i>
         </a>

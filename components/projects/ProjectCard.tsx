@@ -1,4 +1,4 @@
-import { IProjects } from '../types';
+import type { IProjects } from '../../types';
 
 interface Props {
   project: IProjects;
@@ -10,7 +10,7 @@ export const ProjectCard: React.VFC<Props> = ({ project }) => {
       <img
         src={project?.imgUrl}
         alt={project?.name}
-        className='prrojectCard__img'
+        className='projectCard__img'
       />
       <div className='projectCard__info'>
         <h2>{project?.name}</h2>
