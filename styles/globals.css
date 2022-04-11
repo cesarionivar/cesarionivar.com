@@ -4,7 +4,9 @@ html {
   scroll-behavior: smooth;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,13 +22,12 @@ body {
   margin: 0 auto;
 }
 
-
 /* === PAGES === */
 .page {
   min-height: 80vh;
 }
 
-/* PORFOLIO */
+/* PORTFOLIO */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -34,7 +35,6 @@ body {
   gap: 10px;
   padding: 30px;
 }
-
 
 /* About page */
 .about__me {
@@ -47,14 +47,14 @@ body {
   gap: 20px;
 }
 
-.about__me > img  {
+.about__me > img {
   width: 95%;
   height: 100%;
 }
 
 .about__details > p {
   line-height: 1.5;
-  font-family:  sans-serif;
+  font-family: sans-serif;
   padding: 10px;
   text-align: justify;
 }
@@ -80,7 +80,6 @@ body {
     width: 40%;
     height: 40%;
   }
-  
 }
 
 /* Contact page */
@@ -98,7 +97,7 @@ body {
 }
 
 .formControl {
-  display:  flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
@@ -106,7 +105,7 @@ body {
 }
 
 .formControl > input,
-.formControl > textarea  {
+.formControl > textarea {
   font-family: sans-serif, Helvetica;
   font-size: 1rem;
   padding: 10px;
@@ -116,11 +115,10 @@ body {
 
 .formControl > input:focus,
 .formControl > textarea:focus {
-  outline: 1px solid #0098BC;
+  outline: 1px solid #0098bc;
+}
 
-} 
-
-.formControl > textarea  {
+.formControl > textarea {
   min-height: 200px;
   resize: none;
 }
@@ -128,7 +126,7 @@ body {
 .formControl > button {
   border: none;
   padding: 10px 20px;
-  background-color: #0098BC;
+  background-color: #0098bc;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
@@ -145,7 +143,6 @@ body {
     flex-direction: row;
   }
 }
-
 
 /* General */
 .page__title {
@@ -184,14 +181,14 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 1rem;
-  background-color: #0098BC;
+  background-color: #0098bc;
   border-radius: 30px;
   color: white;
   margin-top: 2rem;
   text-transform: uppercase;
   font-size: 1.3rem;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-back:hover {
@@ -212,7 +209,6 @@ body {
   }
 }
 
-
 /* BANNER */
 .title {
   display: inline-block;
@@ -221,13 +217,14 @@ body {
   padding: 0px 20px;
   text-align: center;
   background: -webkit-linear-gradient(0.1turn, #0098bc, #ffb100, #0098bc);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .banner {
   margin: 40px 0px;
-  text-align:  center;
+  text-align: center;
 }
 
 .welcome-img {
@@ -267,7 +264,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
   .title {
     font-size: 1.2rem;
   }
@@ -287,7 +283,6 @@ body {
   .title {
     font-size: 1rem;
   }
-
 }
 
 /* NAVBAR */
@@ -308,7 +303,6 @@ body {
   cursor: pointer;
 }
 
-
 .menu ul {
   display: flex;
   justify-content: space-between;
@@ -323,8 +317,8 @@ body {
 .menu ul li a {
   padding: 0.5rem;
   border-radius: 5px;
-  color: #0098BC;
-  transition: all .3s ease-in-out;
+  color: #0098bc;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu ul li:hover a {
@@ -334,7 +328,6 @@ body {
 .active {
   background-color: #ffb3009a;
 }
-
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -355,19 +348,17 @@ body {
     border: none;
     border-bottom: 2px solid #ffb3009a;
   }
-  
+
   .menu ul li a {
     border-radius: 0px;
     border-bottom: 2px solid #ffb3009a;
   }
-
 }
 
 @media screen and (max-width: 279px) {
   .logo {
     height: 40px;
   }
-
 }
 
 /* RESUME */
@@ -412,16 +403,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
   .resume {
     flex-direction: column;
     gap: 40px;
     margin-top: 10px;
   }
-  
+
   .resume h2 {
     font-size: 1rem;
-
   }
   .resume__works {
     border: none;
@@ -431,7 +420,6 @@ body {
     font-size: 0.8rem;
     padding: 10px 15px;
   }
-
 }
 
 /* HIREME */
@@ -480,7 +468,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
   .hireMe {
     flex-direction: column;
     margin: 0px;
@@ -502,7 +489,6 @@ body {
     /* margin-top: -50px; */
     text-align: justify;
   }
-
 }
 
 /* FOOTER */
@@ -552,11 +538,9 @@ body {
   }
 }
 @media screen and (max-width: 280px) {
-  
   .footer__info {
     font-size: 0.8rem;
   }
-
 }
 
 /* PROJECTS */
@@ -589,12 +573,11 @@ body {
   font-weight: lighter;
 }
 
-
 .projectCard__info a {
   padding: 10px;
   text-decoration: none;
-  background-color: #0098BC;
-  border-color: #0098BC;
+  background-color: #0098bc;
+  border-color: #0098bc;
   text-align: center;
   color: white;
   border-radius: 4px;
@@ -639,14 +622,14 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 1rem;
-  background-color: #0098BC;
+  background-color: #0098bc;
   border-radius: 30px;
   color: white;
   margin-top: 2rem;
   text-transform: uppercase;
   font-size: 1.3rem;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-back:hover {
