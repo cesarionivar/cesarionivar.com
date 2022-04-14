@@ -15,6 +15,11 @@ export const Navbar = () => {
       <div className='menu'>
         <ul>
           <li>
+            <Link href='/blog'>
+              <a className={path === 'blog' ? 'active' : ''}>Blog</a>
+            </Link>
+          </li>
+          <li>
             <Link href='/portfolio'>
               <a className={path === 'portfolio' ? 'active' : ''}>Portfolio</a>
             </Link>
