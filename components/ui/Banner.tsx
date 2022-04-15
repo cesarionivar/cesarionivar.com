@@ -13,7 +13,7 @@ export const Banner = () => {
         <img src='/img/hero.svg' alt='Hero' className='hero-img' />
       </div>
       <div className='intro'>
-        <p>Hey there!, it&apos;s a pleasure to meet you.</p>
+        <p>It&apos;s a pleasure to meet you.</p>
         <p>“Simplicity is the soul of efficiency.” – Austin Freeman</p>
       </div>
     </div>
