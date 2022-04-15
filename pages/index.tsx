@@ -1,14 +1,7 @@
 import { Meta } from '../components/layout';
 import { Banner, Resume, HireMe } from '../components/ui';
-import { getAllPosts } from '../utils/postsApi';
-import type { PostType } from '../types';
 
-type Props = {
-  allPosts: PostType[];
-};
-
-export default function Home({ allPosts }: Props) {
-  console.log(allPosts);
+export default function Home() {
   return (
     <>
       <div className='landing page'>
@@ -21,17 +14,3 @@ export default function Home({ allPosts }: Props) {
     </>
   );
 }
-
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'coverImage',
-    'excerpt',
-  ]);
-
-  return {
-    props: { allPosts },
-  };
-};
