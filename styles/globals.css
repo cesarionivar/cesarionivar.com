@@ -242,7 +242,8 @@ body {
 
 .hero-img {
   object-fit: contain;
-  width: 60%;
+  max-width: 60%;
+  width: 400px;
 }
 
 .intro {
