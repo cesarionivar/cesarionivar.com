@@ -8,11 +8,11 @@ export const HireMe = () => {
       </div>
       <div className='hireMe__info'>
         <p>
-          If you want to build a website for your bussiness or even for your
-          personal use, such as a blogspot, don&apos;t wait to long... and hire
+          If you want to build a website for your business or even for your
+          personal use, such as a blog, don&apos;t wait to long... and contact
           me ✔
         </p>
-        <Link href='/contact'>Hire me! 📝</Link>
+        <Link href='/contact'>Get in touch! 📝</Link>
       </div>
     </div>
   );
