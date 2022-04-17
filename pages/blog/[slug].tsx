@@ -1,4 +1,5 @@
 import type { Params } from 'next/dist/server/router';
+import { Meta } from '../../components/layout';
 import type { PostType } from '../../types';
 import markdownToHtml from '../../utils/markdownToHtml';
 import { getPostBySlug, getAllPosts } from '../../utils/postsApi';
@@ -8,10 +9,12 @@ type Props = {
 };
 
 export default function PostPage({ post }: Props) {
-  console.log(post);
   return (
     <>
-      <p>Post</p>
+      <Meta title={`${post.title} | Cesario Nivar`} />
+      <div className='single-post page'>
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      </div>
     </>
   );
 }
