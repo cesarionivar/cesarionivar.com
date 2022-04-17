@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Meta } from '../../components/layout';
 import { getAllPosts } from '../../utils/postsApi';
 import type { PostType } from '../../types';
@@ -11,10 +12,15 @@ export default function BlogPage({ allPosts }: Props) {
     <>
       <Meta title='Blog | Cesario Nivar' />
 
-      <div className='page'>
-        {allPosts.map((post) => (
-          <div key={post.slug}>{post.excerpt}</div>
-        ))}
+      <div className='blog page'>
+        <h1 className='page__title'>Recent Posts</h1>
+        <div className='posts'>
+          {allPosts.map((post) => (
+            <Link href={`/blog/${post.slug}`} key={post.slug} passHref>
+              <a className='post__link'>{post.title}</a>
+            </Link>
+          ))}
+        </div>
       </div>
     </>
   );
