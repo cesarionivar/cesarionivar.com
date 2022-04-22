@@ -13,13 +13,19 @@ export default function BlogPage({ allPosts }: Props) {
       <Meta title='Blog | Cesario Nivar' />
 
       <div className='blog page'>
-        <h1 className='page__title'>Recent Posts</h1>
+        <h2 className='page__title'>Recent Posts</h2>
         <div className='posts'>
-          {allPosts.map((post) => (
-            <Link href={`/blog/${post.slug}`} key={post.slug} passHref>
-              <a className='post__link'>{post.title}</a>
-            </Link>
-          ))}
+          {allPosts.length === 0 ? (
+            <h2 className='posts__empty'>
+              There&apos;s not posts yet🙈, come back soon!!!😏
+            </h2>
+          ) : (
+            allPosts.map((post) => (
+              <Link href={`/blog/${post.slug}`} key={post.slug} passHref>
+                <a className='post__link'>{post.title}</a>
+              </Link>
+            ))
+          )}
         </div>
       </div>
     </>
