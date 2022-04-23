@@ -690,6 +690,42 @@ body {
 }
 
 .post__link {
-  background-color: white;
   display: block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.post__link:hover {
+  background-color: #037e9a3d;
+  border-radius: 10px;
+}
+
+.post__link img {
+  width: 70px;
+  height: 70px;
+}
+
+.post__linkTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #037e9a;
+}
+
+.post__linkDate {
+  font-size: 0.8rem;
+  background-color: #272b2b;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 200;
+  padding: 0 5px;
+}
+
+.post__linkExcerpt {
+  font-size: 1rem;
+  color: #222;
 }
