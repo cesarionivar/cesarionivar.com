@@ -1,147 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;1,700&display=swap');
 
-html {
-  scroll-behavior: smooth;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  @apply scroll-smooth;
 }
 
 body {
-  background-color: #f2f2f2;
-  font-family: 'Amaranth', sans-serif;
+  @apply bg-gray-200 text-slate-800 dark:bg-slate-800 dark:text-white font-amaranth;
 }
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
+  @apply max-w-screen-xl mx-auto;
 }
 
 /* === PAGES === */
 .page {
-  min-height: 80vh;
+  @apply min-h-[80vh];
 }
 
 /* PORTFOLIO */
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  place-items: center;
-  gap: 10px;
-  padding: 30px;
+  @apply grid place-items-center gap-2 p-10 grid-cols-auto-fit-260;
 }
 
-/* About page */
 .about__me {
-  padding: 20px;
-  max-width: 1300px;
-  margin: 20px auto;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.about__me > img {
-  width: 95%;
-  height: 100%;
+  @apply p-5 max-w-screen-xl my-5 mx-auto text-lg flex flex-col md:flex-row md:justify-between gap-5;
 }
 
 .about__details > p {
-  line-height: 1.5;
-  font-family: sans-serif;
-  padding: 10px;
-  text-align: justify;
-}
-
-@media only screen and (max-width: 768px) {
-  .about__me {
-    display: block;
-  }
-
-  .about__me > img {
-    width: 60%;
-    height: 60%;
-    float: left;
-  }
-
-  .about__details > p {
-    text-align: left;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .about__me > img {
-    width: 40%;
-    height: 40%;
-  }
+  @apply leading-6 font-sans p-3 text-justify md:text-left;
 }
 
 /* Contact page */
 .contactForm__container {
-  /* background-color: white; */
-  padding: 20px;
-  max-width: 600px;
-  margin: 20px auto;
+  @apply p-5 max-w-xl my-5 mx-auto;
 }
 
 .contactForm__container > form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  @apply flex flex-col gap-3 dark:text-slate-800;
 }
 
 .formControl {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+  @apply flex flex-col items-center gap-3 w-full;
 }
 
 .formControl > input,
 .formControl > textarea {
-  font-family: sans-serif, Helvetica;
-  font-size: 1rem;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid lightgray;
+  @apply font-sans text-lg p-2 w-full border-solid border-gray-200;
 }
 
 .formControl > input:focus,
 .formControl > textarea:focus {
-  outline: 1px solid #0098bc;
+  @apply outline outline-[#0098bc];
 }
 
 .formControl > textarea {
-  min-height: 200px;
-  resize: none;
+  @apply min-h-[200px] resize-none;
 }
 
 .formControl > button {
-  border: none;
-  padding: 10px 20px;
-  background-color: #0098bc;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
-  margin-top: 10px;
+  @apply border-none py-2 px-5 text-white cursor-pointer text-base rounded mt-2 bg-[#0098bc];
 }
 
 .formControl > button:hover {
-  background-color: #07728a;
+  @apply bg-[#07728a];
 }
 
-@media only screen and (min-width: 768px) {
-  .formControl.sender-data {
-    flex-direction: row;
-  }
+.formControl.sender-data {
+  @apply md:flex-row;
 }
 
 /* General */
